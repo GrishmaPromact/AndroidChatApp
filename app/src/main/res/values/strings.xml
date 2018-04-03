@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Chat App</string>
+    <string name="hint_uname">Username</string>
+    <string name="hint_password">Password</string>
+</resources>
