@@ -18,7 +18,8 @@ jobs:
           command: export TERM=xterm && ./gradlew androidDependencies
       - run:
          name: build-app
-         command: gradle assembleRelease
+         command: |
+                  gradle assembleRelease
 
       - save_cache:
           paths:
