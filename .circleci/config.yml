@@ -19,8 +19,9 @@ jobs:
       - run:
          name: build-app
          command: |
-                  gradle assembleRelease
-
+           if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                  ./gradlew assembleRelease
+           fi
       - save_cache:
           paths:
             - ~/.gradle
