@@ -6,8 +6,8 @@ android {
         exclude 'META-INF/LICENSE-FIREBASE.txt'
         exclude 'META-INF/NOTICE'
     }
-    compileSdkVersion 23
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.androidchatapp"
@@ -16,6 +16,9 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        jackOptions {
+            enabled true
+        }
     }
     buildTypes {
         release {
@@ -24,8 +27,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
