@@ -28,3 +28,6 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
+      - store_artifacts:
+                      path: /src/app/build/outputs/apk/
+                      prefix: apk
